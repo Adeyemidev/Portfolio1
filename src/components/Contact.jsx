@@ -1,0 +1,77 @@
+
+import {useForm} from 'react-hook-form'
+import * as yup  from 'yup'
+import {yupResolver} from '@hookform/resolvers/yup'
+
+import twitter from "../assets/twitter.svg"
+import github from '../assets/github.svg'
+import linkedIn from '../assets/LinkedIn.png'
+import icon from  '../assets/simple-icons.svg'
+import net from '../assets/net.png'
+export const Contact = ()=>{
+
+    const  onSubmit = (data)=>{
+        console.log(data)
+       }
+       
+       const schema = yup.object().shape({
+        Name: yup.string().required('required!'),
+        Email: yup.string().email().required('required!'),
+        Tel: yup.number().positive().integer().required('required!'),
+        Message: yup.string().required('required!')
+      
+       })
+      
+       const {register, handleSubmit, formState: {errors}} = useForm({
+      resolver: yupResolver(schema)
+       });
+      
+    return(<div className='bg-darkgrey pt-8 '>
+        <section id='contact' className='lg:flex mx-4 md:mx-28 text-center items-center  justify-cente lg:justify-between' style={{padding:'52px 0'}}>
+<div className='text-center lg:text-left  pb-20'>
+
+  <h1 className='text-[40px] leading-[40px] tracking-[-1.14px] sm:text-[72px] sm:leading-[72px] sm:tracking-[-2.05px] md:text-extralarge md:leading-extralarge md:tracking-tight font-bold'>Contact</h1>
+
+<p className='text-center lg:text-left text-smallest sm:text-smaller pt-6 leading-[26px] sm:leading-normal max-w-md text-gray'>
+I would love to hear about your project and how I could help.
+ Please fill in the form, and I’ll get back to you as soon as possible.
+</p>
+
+</div>
+
+<div className=" text-right">
+
+<form onSubmit={handleSubmit(onSubmit)} className="outline-none" >
+<div className='flex'> <input type='text' placeholder="Name" className=" border-b w-full md:px-4 lg:px-0 pb-4"{...register("Name")}/><br/>
+     <span>{errors.Name?.message}</span>
+</div>
+
+<div className='flex'><input type='email' placeholder="Email: easycode.techdev@gmail.com" className=" border-b w-full md:px-4 lg:px-0 py-4" {...register("Email")}/><br/>
+<span>{ (errors.Tel ? 'required!' : '')}</span>
+</div>
+
+<div className='flex'>
+<textarea type='text' placeholder="Message" className=" border-b lg:w-96 w-full md:px-4 lg:px-0  py-10" {...register("Message")}/><br/>
+<span>{errors.Message?.message}</span>
+
+      </div>
+
+<button type="submit" className=' font-bold text-[16px] leading-normal tracking-[2.29] py-4 sendMessage'>SEND MESSAGE</button>
+
+ </form></div>
+
+ 
+</section>
+<img id='imageNet' src={net} alt="" />
+<nav id="nav" className="sm:flex sm:justify-between pt-8 mx-4 md:mx-28 mb-0 pb-20 border-t text-center sm:text-left items-center">
+        <h3 className="text-small sm:text-medium font-medium leading-medium tracking-small" >adeyemi</h3>
+<ul className="md:gap-4 mt-10 md:mt-0 items-center md:mr-8 grid grid-flow-col mx-20 sm:mx-0 place-items-center ">
+
+ <a href="https://github.com/Adeyemidev" > <img src={github} alt="" /></a>
+ <img src={icon} alt=""/>
+ <a href="www.linkedin.com/in/adeyemi-ezekiel" > <img src={linkedIn} alt="" /></a>
+ <a href="https://x.com/easycode01?t=XbtFtZ4qzl97gErjSosZsQ&s=09" > <img src={twitter} alt="" /></a>
+</ul>
+</nav>
+</div>
+)}
