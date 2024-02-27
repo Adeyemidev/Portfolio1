@@ -5,11 +5,10 @@
 @import url("https://api.fontshare.com/css?f[]=space grotesk@400,700&display=swap"); 
 
 
-
 body {
   margin: 0;
-}
 
+}
 .App { 
 background-color: #151515;
 color:#FFFFFF;}
@@ -17,8 +16,6 @@ color:#FFFFFF;}
 .myImage{position: relative;
 width: 765px;
 height: 650px;
-/* margin-tolp: -6,.80rem; */
-
 }
 
  #head button::after{content: '';
@@ -27,6 +24,7 @@ width: 100%;
 display: block;
 background-color: #4EE1A0;
 ;} 
+
 #head button:hover:after{
   width: 2%;
   transition: 02s;
@@ -51,12 +49,13 @@ letter-spacing: -1.5px;
     background-color:#242424;
 }
   
+
  .left{
   position:relative;
   left:59em;
   bottom: 5rem;
  }
- 
+
 menu span{   
  font-size: 18px;
  font-weight: 500;
@@ -104,7 +103,7 @@ top:-6rem;}
   .myImage{
     width: 300px;
     height: 650px;
-   margin-top:-6.70rem;
+   margin-top:-7rem;
  }
 
  .underlined::after{

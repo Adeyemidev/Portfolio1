@@ -7,14 +7,14 @@ export const Header = () => {
 
       <section id='head' className="flex lg:mx-28 flex-wrap sm:mb-20 items-center sm:flex-nowrap flex-col-reverse sm:flex-row text-center sm:text-left md:ml-6 -mt-[70px]">
 
-        <div className='-mt-32 md:mt-0 relative z-50 md:ml-1 lg:ml-0  sm:-top-0 '>
-<h1 className='text-white font-bold mx-4 sm:mx-0
-          text-[40px] leading-[40px] tracking-[-1.14px] md:text-[72px] sm:leading-[72px] sm:tracking-[-2.05px]
+        <div className='-mt-32  mx-4 md:mx-0 md:mt-0 relative z-50 md:ml-1 lg:ml-0  sm:-top-0 '>
+<h1 className='text-white font-bold mx-4 sm:mx-0 mt-7 lg:mt-0
+          text-[38px] leading-[40px] tracking-[-1.14px] md:text-[72px] sm:leading-[72px] sm:tracking-[-2.05px]
           lg:text-extralarge lg:leading-extralarge '>
             Nice to meet you! I'm <button>Adeyemi.</button>
           </h1>
 
-          <h5 className='mx-10 sm:mx-0  sm:max-w-[370px] mt-6 text-gray'>
+          <h5 className='md:max-w-[370px] mt-6 text-gray'>
             Based in the Nigeria, I’m a front-end developer passionate about building accessible web apps that users love.
           </h5>
 
