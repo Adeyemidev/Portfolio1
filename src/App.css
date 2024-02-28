@@ -43,12 +43,7 @@ letter-spacing: -1.5px;
   input, textarea{outline:none;
     background-color:#242424;
 }
- .left{
-  position:relative;
-  left:59em;
-  bottom: 5rem;
- }
-
+ 
 menu span{   
  font-size: 18px;
  font-weight: 500;
@@ -72,26 +67,9 @@ top:-6rem;}
 
 .sendMessage1::after{width: 99%;
 }
-
-@media (width < 768px) {
-  .left{
-    position: relative;
-    left: 1.9rem;
-    bottom: 1rem;
-    object-fit: contain;
-   }
-
-}
-
+  
 @media (width < 500px) {
 
-    .left{
-    position: relative;
-    left: 1.9rem;
-    bottom: 1rem;
-    object-fit: contain;
-    
-   }
    #Skills h2{
    font-size: 32px;
    font-weight: 700;

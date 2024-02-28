@@ -11,24 +11,27 @@ export const Header = () => {
 
   return (
   
-    <main  data-aos="fade-up" data-aos-duration="2000" id='head' className="pt-24 lg:mx-28 sm:mb-20 items-center ">
+    <main  data-aos="fade-up" data-aos-duration="2000" id='head' className="pt-20 lg:pt-24  lg:mx-28 sm:mb-20 items-center ">
+<div className='mx-4'>
+  <TypeAnimation
+    sequence={[
+      `I'M ADEYEMI EZEKIEL`,
+      
+    ]}   
+     wrapper="span"
+    speed={40}
+    cursor={true}
+    style={{
+      fontSize: '2.275em',
+      color:'#FFFFFF',
+      lineHeight:'1.2',
+      fontFamily: 'Blorado, sans-serif',
+      textRendering: 'geometricPrecision',
+      fontWeight: '500',
+      letterSpacing: '9.9px'
+    }}
+  />
 
-<div className=' mx-4 '>
-     <TypeAnimation
-  sequence={[
-    // Same substring at the start will only be typed once, initially
-    `I'M ADEYEMI EZEKIEL`,
-    1000,
-    `I'M A FRONTEND DEVELOPER`,
-    1000,
-   
-  ]}
-  wrapper="span"
-  speed={50}
-      cursor={true}
-      repeat={Infinity}
-      style={{ fontSize: '2.275em', color:'#FFFFFF',lineHeight:'1.2', fontFamily: ' font-family: Blorado, sans-serif', textRendering:'geometricPrecision' ,fontWeight: '500' ,letterSpacing: '9.9px'}}
-/>
     <p className='md:max-w-5xl mt-6 text-gray'>
        Your friendly neighborhood frontend developer, and JavaScript engineer. I spend my days (and often nights)
         painting the Internet canvas with <Link to='Projects'spy={true} smooth={true} offset={-55} duration={1500}  
