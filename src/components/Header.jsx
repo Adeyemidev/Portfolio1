@@ -1,35 +1,55 @@
-import myImage from '../assets/myImage.png';
-//import circle from '../assets/Oval-circle.png'
-import headerNet from '../assets/headerNet.png'
+import { useEffect } from 'react';
+import Aos from 'aos';
+import {Link} from 'react-scroll'
+import { TypeAnimation } from 'react-type-animation';
+import icon from '../assets/simple-icons.svg'
 export const Header = () => {
+
+  useEffect(()=>{
+    Aos.init()
+  },[])
+
   return (
-    <>        <img className='firstImg pt-10' style={{position:'relative', zIndex:'1'}}src={headerNet} alt="he" /> 
+  
+    <main  data-aos="fade-up" data-aos-duration="2000" id='head' className="pt-24 lg:mx-28 sm:mb-20 items-center ">
 
-      <section id='head' className="flex lg:mx-28 flex-wrap sm:mb-20 items-center sm:flex-nowrap flex-col-reverse sm:flex-row text-center sm:text-left md:ml-6 -mt-[70px]">
+<div className=' mx-4 '>
+     <TypeAnimation
+  sequence={[
+    // Same substring at the start will only be typed once, initially
+    `I'M ADEYEMI EZEKIEL`,
+    1000,
+    `I'M A FRONTEND DEVELOPER`,
+    1000,
+   
+  ]}
+  wrapper="span"
+  speed={50}
+      cursor={true}
+      repeat={Infinity}
+      style={{ fontSize: '2.275em', color:'#FFFFFF',lineHeight:'1.2', fontFamily: ' font-family: Blorado, sans-serif', textRendering:'geometricPrecision' ,fontWeight: '500' ,letterSpacing: '9.9px'}}
+/>
+    <p className='md:max-w-5xl mt-6 text-gray'>
+       Your friendly neighborhood frontend developer, and JavaScript engineer. I spend my days (and often nights)
+        painting the Internet canvas with <Link to='Projects'spy={true} smooth={true} offset={-55} duration={1500}  
+>PROJECTS</Link> and lines of code, turning zeroes
+       and ones into immersive, interactive experiences.
+    </p>
+       
+    <p className='md:max-w-5xl mt-6 text-gray'>Through continuous learning, I've specialized in 
+           developing customer-centric frontend apps for business owners effectively doubling their trafic
+           by 10x, with my strong focus on creating visually appealing and highly functional user interfaces.
 
-        <div className='-mt-32  mx-4 md:mx-0 md:mt-0 relative z-50 md:ml-1 lg:ml-0  sm:-top-0 '>
-<h1 className='text-white font-bold mx-4 sm:mx-0 mt-7 lg:mt-0
-          text-[38px] leading-[40px] tracking-[-1.14px] md:text-[72px] sm:leading-[72px] sm:tracking-[-2.05px]
-          lg:text-extralarge lg:leading-extralarge '>
-            Nice to meet you! I'm <button>Adeyemi.</button>
-          </h1>
-
-          <h5 className='md:max-w-[370px] mt-6 text-gray'>
-            Based in the Nigeria, I’m a front-end developer passionate about building accessible web apps that users love.
-          </h5>
-
-          <h4 className='mt-10 -mb-16 sm:-mb-0 font-bold text-smaller leading-normal tracking-[2.29px] sendMessage sendMessage1'>         
-           <a href="mailto:easycode.techdev@gmail.com">CONTACT ME</a >
-           </h4>
-
-        </div>
-
-        <div>
-          <img className='myImage object-contain bottom-16 sm:bottom-0 relative z-30 sm:object-cover mx-auto lg:-ml-6'src={myImage} alt=""/>
-        </div>
-        {/* <img className='circle bg-red-400 -ml-2 relative z-50'style={{objectPosition:'2rem -3rem'}} src={circle} alt="" /> */}
-
-      </section>
-    </>
+          Additionally, I've extensive knowledge in 3D visualization using WebGL and ThreeJS, as well as web VR/AR
+            implementation. I convert any designs into the real products with the pixel-perfect/mobile responsive features
+             and to make the app work cross all the browsers. anyways you can <a href="mailto:easycode.techdev@gmail.com">CONTACT ME</a>
+   </p>
+          <Link to='Projects'spy={true} smooth={true} offset={-55} duration={1500}   className=' flex items-center gap-6 mt-10 -mb-16 sm:-mb-0  leading-normal tracking-[2.29px] '>         
+           <span className='sendMessage  sendMessage1'>SEE PROJECTS</span >
+           <img className=" animate-bounce w-6 h-6 ..." src={icon} alt="" />
+           </Link>   
+           
+            </div>
+      </main>
   );
 };

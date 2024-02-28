@@ -4,9 +4,9 @@ import linkedIn from '../assets/LinkedIn.png'
 import icon from  '../assets/simple-icons.svg'
 export const NavBar = ()=>{
     return(<>
-    <nav id="nav" className="relative z-40 sm:flex sm:justify-between pt-8 mx-4 md:mx-6 lg:mx-28  text-center sm:text-left items-center">
-        <h3 className="text-small sm:text-medium font-medium leading-medium tracking-small ">adeyemi</h3>
-<ul className="md:gap-4 mt-10 md:mt-0 items-center lg:mr-8 grid grid-flow-col mx-20 sm:mx-0 place-items-center ">
+    <nav id="nav" className="relative z-40 sm:flex sm:justify-between pt-8 mx-4 md:mx-6 lg:mx-28 text-center sm:text-left items-center">
+        <h3 className="text-small sm:text-medium font-medium leading-medium tracking-small ">EasyCode</h3>
+<ul className="md:gap-10 mt-10 md:mt-0 items-center grid grid-flow-col mx-20 sm:mx-0 place-items-center ">
 
  <a href="https://github.com/Adeyemidev" > <img src={github} alt="" /></a>
  <img src={icon} alt="" />

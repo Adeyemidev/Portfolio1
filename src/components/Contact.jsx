@@ -8,6 +8,10 @@ import github from '../assets/github.svg'
 import linkedIn from '../assets/LinkedIn.png'
 import icon from  '../assets/simple-icons.svg'
 import net from '../assets/net.png'
+import { useEffect } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+ 
 export const Contact = ()=>{
 
     const  onSubmit = (data)=>{
@@ -26,7 +30,14 @@ export const Contact = ()=>{
       resolver: yupResolver(schema)
        });
       
-    return(<div className='bg-darkgrey pt-8 '>
+
+
+       useEffect(()=>{
+        Aos.init()
+       },[])
+
+
+    return(<div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" className='bg-darkgrey pt-8 '>
         <section id='contact' className='lg:flex mx-4 md:mx-28 text-center items-center  justify-cente lg:justify-between' style={{padding:'52px 0'}}>
 <div className='text-center lg:text-left  pb-20'>
 

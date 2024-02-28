@@ -16,7 +16,7 @@ export default {
      large: '48px',
      medium: '32px',
      small: '24px',
-     smaller: '18px',
+     smaller: '18px', 
      smallest: '16px'
    },
 
