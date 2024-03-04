@@ -48,7 +48,7 @@ export const Header = () => {
              and to make the app work cross all the browsers. anyways you can <a href="mailto:easycode.techdev@gmail.com">CONTACT ME</a>
    </p>
           <Link to='Projects'spy={true} smooth={true} offset={-55} duration={1500}   className=' flex items-center gap-6 mt-10 -mb-16 sm:-mb-0  leading-normal tracking-[2.29px] '>         
-           <span className='sendMessage  sendMessage1'>SEE PROJECTS</span >
+           <span className='sendMessage  sendMessage1 font-thin'>SEE PROJECTS</span >
            <img className=" animate-bounce w-6 h-6 ..." src={icon} alt="" />
            </Link>   
            
