@@ -10,7 +10,7 @@ export const NavBar = ()=>{
 
  <a href="https://github.com/Adeyemidev" > <img src={github} alt="" /></a>
  <img src={icon} alt="" />
- <a href="www.linkedin.com/in/adeyemi-ezekiel" > <img src={linkedIn} alt="" /></a>
+ <a href="https://linkedin.com/in/adeyemi-ezekiel" > <img src={linkedIn} alt="" /></a>
  <a href="https://x.com/easycode01?t=XbtFtZ4qzl97gErjSosZsQ&s=09" > <img src={twitter} alt="" /></a>
 
 </ul>
