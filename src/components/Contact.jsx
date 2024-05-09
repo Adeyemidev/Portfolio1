@@ -3,10 +3,10 @@ import {useForm} from 'react-hook-form'
 import * as yup  from 'yup'
 import {yupResolver} from '@hookform/resolvers/yup'
 
-import twitter from "../assets/twitter.svg"
-import github from '../assets/github.svg'
-import linkedIn from '../assets/LinkedIn.png'
-import icon from  '../assets/simple-icons.svg'
+import { IoMdMail } from "react-icons/io";
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { BsTwitterX } from "react-icons/bs";
 import net from '../assets/net.png'
 import { useEffect } from 'react'
 import Aos from 'aos'
@@ -29,8 +29,6 @@ export const Contact = ()=>{
        const {register, handleSubmit, formState: {errors}} = useForm({
       resolver: yupResolver(schema)
        });
-      
-
 
        useEffect(()=>{
         Aos.init()
@@ -43,7 +41,7 @@ export const Contact = ()=>{
 
   <h1 className='text-[40px] leading-[40px] tracking-[-1.14px] sm:text-[72px] sm:leading-[72px] sm:tracking-[-2.05px] md:text-extralarge md:leading-extralarge md:tracking-tight font-bold'>Contact</h1>
 
-<p className='text-center lg:text-left text-smallest sm:text-smaller pt-6 leading-[26px] sm:leading-normal max-w-md text-gray'>
+<p className='text-center lg:text-left text-smallest sm:text-smaller pt-6 leading-[26px] sm:leading-normal lg:w-[65%] m/ax-w-md text-gray'>
 I would love to hear about your project and how I could help.
  Please fill in the form, and I’ll get back to you as soon as possible.
 </p>
@@ -75,14 +73,13 @@ I would love to hear about your project and how I could help.
 </section>
 <img id='imageNet' src={net} alt="" />
 <nav id="nav" className="sm:flex sm:justify-between pt-8 mx-4 md:mx-28 mb-0 pb-20 border-t text-center sm:text-left items-center">
-        <h3 className="text-small sm:text-medium font-medium leading-medium tracking-small" >adeyemi</h3>
+        <h3 className="text-small sm:text-medium font-medium leading-medium tracking-small" >EasyCode</h3>
 <ul className="md:gap-4 mt-10 md:mt-0 items-center md:mr-8 grid grid-flow-col mx-20 sm:mx-0 place-items-center ">
-
- <a href="https://github.com/Adeyemidev" > <img src={github} alt="" /></a>
- <img src={icon} alt=""/>
- <a href="https://linkedin.com/in/adeyemi-ezekiel" > <img src={linkedIn} alt="" /></a>
- <a href="https://x.com/easycode01?t=XbtFtZ4qzl97gErjSosZsQ&s=09" > <img src={twitter} alt="" /></a>
-</ul>
+<a href="https://linkedin.com/in/adeyemi-frontend-dev"> <FaLinkedin size={26}/></a>
+<a href="mailto:easycode.techdev@gmail.com"> <IoMdMail size={26}/></a>
+ <a href="https://github.com/Adeyemidev">  <FaGithub size={26}/></a>
+ <a href="https://x.com/easycode01?t=XbtFtZ4qzl97gErjSosZsQ&s=09" ><BsTwitterX size={26}/></a>
+ </ul>
 </nav>
 </div>
 )}
