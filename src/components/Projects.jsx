@@ -31,12 +31,12 @@ export const Projects = ()=>{
        <a data-aos="zoom-in-up" data-aos-duration="1000" href="/"><div>
         <img src={gcms} alt=''/>
         <p className='text-[24px] leading-medium font-medium pt-5 pb-2'>GCMS Website</p>
-       <menu className='flex gap-5'><span>REACTJS</span> <span>STYLE COMPONENT</span> <span>TAILWINDCSS</span><span>EXPRESSJS</span>  </menu>
+       <menu className='flex gap-5'><span>REACTJS</span><span>TAILWINDCSS</span><span>EXPRESSJS</span>  </menu>
        </div></a>
 
        <a data-aos="zoom-in-up" data-aos-duration="2000" href="https://www.cryptixnft.io/ "><div><img src={page5} alt="page5"/>
         <p className='text-[24px] leading-medium font-medium pt-5 pb-2'>CRYPTIX</p>
-       <menu className='flex gap-5'><span>SVELTEJS</span> <span>NEXTJS</span> <span>SMART CONTRACT</span><span>WEB3 API</span></menu>
+       <menu className='flex gap-5'><span>SVELTEJS</span> <span>NEXTJS</span> <span>SMART CONTRACT</span></menu>
         </div></a>
 
        <a data-aos="zoom-in-up" data-aos-duration="2000" href="https://countries-apis-adeyemi.netlify.app/"><div> <img src={page2} alt=''/>
