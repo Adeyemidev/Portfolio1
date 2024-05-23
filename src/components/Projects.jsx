@@ -4,6 +4,7 @@ import page3 from '../assets/Designo.png'
 import page4 from '../assets/audiophile.png'
 import page5 from '../assets/cryptix.png'
 import page6 from '../assets/sunnyside.png'
+import gcms from '../assets/GCMS.png'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
@@ -24,6 +25,12 @@ export const Projects = ()=>{
         <a data-aos="zoom-in-up" data-aos-duration="1000" href="https://crowdlaunch.vercel.app/"><div>
         <img src={page1} alt=''/>
         <p className='text-[24px] leading-medium font-medium pt-5 pb-2'>CROWDLAUNCH</p>
+       <menu className='flex gap-5'><span>TYPESCRIPT</span> <span>REACT</span> <span>TAILWINDCSS</span>  </menu>
+       </div></a>
+
+       <a data-aos="zoom-in-up" data-aos-duration="1000" href="https://crowdlaunch.vercel.app/"><div>
+        <img src={gcms} alt=''/>
+        <p className='text-[24px] leading-medium font-medium pt-5 pb-2'>GCMS Website</p>
        <menu className='flex gap-5'><span>TYPESCRIPT</span> <span>REACT</span> <span>TAILWINDCSS</span>  </menu>
        </div></a>
 
