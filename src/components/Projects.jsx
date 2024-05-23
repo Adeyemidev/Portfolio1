@@ -28,7 +28,7 @@ export const Projects = ()=>{
        <menu className='flex gap-5'><span>TYPESCRIPT</span> <span>REACT</span> <span>TAILWINDCSS</span>  </menu>
        </div></a>
 
-       <a data-aos="zoom-in-up" data-aos-duration="1000" href="https://crowdlaunch.vercel.app/"><div>
+       <a data-aos="zoom-in-up" data-aos-duration="1000" href="/"><div>
         <img src={gcms} alt=''/>
         <p className='text-[24px] leading-medium font-medium pt-5 pb-2'>GCMS Website</p>
        <menu className='flex gap-5'><span>TYPESCRIPT</span> <span>REACT</span> <span>TAILWINDCSS</span>  </menu>
