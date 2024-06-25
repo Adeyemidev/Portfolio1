@@ -35,7 +35,7 @@ export const Contact = ()=>{
        },[])
 
 
-    return(<div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" className='bg-darkgrey pt-8 '>
+    return(<div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" className='bg-darkgrey pt-8 '>
         <section id='contact' className='lg:flex mx-4 md:mx-28 text-center items-center  justify-cente lg:justify-between' style={{padding:'52px 0'}}>
 <div className='text-center lg:text-left  pb-20'>
 

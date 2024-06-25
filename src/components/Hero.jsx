@@ -40,9 +40,11 @@ export const Header = () => {
     </p>
        
 <p className='md:max-w-5xl mt-6 text-gray'>
-      I specialize in helping startups navigate the journey from concept to execution. 
- With a focus on customer-centric design and a dedication to Test-Driven Development (TDD),
-  I bring your vision to life using JavaScript/TypeScript, ReactJS, NextJS, TailwindCSS, & MongoDB. 
+  Through continuous learning, I've specialized in buiilding customer-centric websites/web apps for business owners 
+  effectively doubling their trafic by 10x. My objective has
+   always been to develop visually appealing and highly functional
+    interfaces that users can interact with seamlessly. 
+    Anyway you can <a className='font-bold text-base' href="mailto:easycode.techdev@gmail.com">CONTACT ME</a>
 
    </p>
           <Link to='Projects'spy={true} smooth={true} offset={-55} duration={1500}   className=' flex items-center gap-6 mt-10 -mb-0  leading-normal tracking-[2.29px] '>         
