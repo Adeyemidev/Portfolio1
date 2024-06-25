@@ -11,8 +11,8 @@ export const Header = () => {
 
   return (
   
-    <main  data-aos="fade-up" data-aos-duration="2000" id='head' className=" pt-20 md:pt-32 mx-4 md:-6 lg:mx-28 sm:mb-20 items-center ">
-<div className='mx-4'>
+    <main  data-aos="fade-up" data-aos-duration="2000" id='head' className=" pt-20 md:pt-32  mx-4 md:mx-6  lg:mx-28 sm:mb-20 items-center ">
+<div >
   <TypeAnimation
     sequence={[
       `I'M ADEYEMI EZEKIEL`,
