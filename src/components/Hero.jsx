@@ -34,13 +34,11 @@ export const Header = () => {
 
     <p className='md:max-w-5xl mt-6 text-gray'>
        Your friendly neighborhood frontend developer, and JavaScript engineer. I spend my days (and often nights)
-        painting the Internet canvas with <Link to='Projects'spy={true} smooth={true} offset={-55} duration={1500}  
->PROJECTS</Link> and lines of code, turning zeroes
-       and ones into immersive, interactive experiences.
+        painting the Internet canvas with <Link to='Projects'spy={true} smooth={true} offset={-55} duration={1500}>PROJECTS</Link> and lines of code, turning zeroes and ones into immersive, interactive experiences.
     </p>
        
 <p className='md:max-w-5xl mt-6 text-gray'>
-  Through continuous learning, I've specialized in buiilding customer-centric websites/web apps for business owners 
+  Through continuous learning, I've specialized in buiilding High-converting websites for creative brands and businesses,
   effectively doubling their trafic by 10x. My objective has
    always been to develop visually appealing and highly functional
     interfaces that users can interact with seamlessly. 
