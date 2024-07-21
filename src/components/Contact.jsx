@@ -84,12 +84,12 @@ return(<div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-ao
     <h3 className="text-small sm:text-medium font-medium leading-medium tracking-small">EasyCode</h3>
 
     <div>
-      <p className='text-gray'>
+      <p className='text-gray pt-5'>
        <strong>{count}</strong> visits this week.
       </p>
     </div>
 
-    <ul className="md:gap-4 mt-10 md:mt-0 items-center md:mr-8 grid grid-flow-col mx-20 sm:mx-0 place-items-center ">
+    <ul className="md:gap-4 mt-5 md:mt-0 items-center md:mr-8 grid grid-flow-col mx-20 sm:mx-0 place-items-center ">
     <a href="https://linkedin.com/in/adeyemi-frontend-dev"> <FaLinkedin size={26}/></a>
     <a href="mailto:easycode.techdev@gmail.com"> <IoMdMail size={26}/></a>
     <a href="https://github.com/Adeyemidev">  <FaGithub size={26}/></a>
