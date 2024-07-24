@@ -12,7 +12,7 @@ return(<>
 
 <a href="https://linkedin.com/in/adeyemi-frontend-dev"> <FaLinkedin size={26}/></a>
 <a href="mailto:adeyemiezekiel26@gmail.com"> <IoMdMail size={26}/></a>
- <a href="https://github.com/Adeyemidev">  <FaGithub size={26}/></a>
+ <a href="https://github.com">  <FaGithub size={26}/></a>
  <a href="https://x.com/easycode01?t=XbtFtZ4qzl97gErjSosZsQ&s=09" ><BsTwitterX size={26}/></a>
 
 
