@@ -15,7 +15,7 @@ export const Header = () => {
 <div >
   <TypeAnimation
     sequence={[
-      `I'M ADEYEMI EZEKIEL`,
+      `I'M ADEYEMI`,
       
     ]}   
      wrapper="span"
